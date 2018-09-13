@@ -1,6 +1,6 @@
 <?php
 /**
- * @package    Radical Field Html
+ * @package    Radical Html Field
  *
  * @author     delo-design.ru <info@delo-design.ru>
  * @copyright  Copyright (C) 2018 "Delo Design". All rights reserved.
@@ -46,7 +46,7 @@ class JFormFieldRadicalseevars extends FormField
 	{
 
 		$outputHtml = '';
-		$path = PluginHelper::getLayoutPath( 'fields', 'radicalfieldhtml', 'radicalfieldhtml');
+		$path = PluginHelper::getLayoutPath( 'fields', 'radicalhtmlfield', 'radicalhtmlfield');
 		$vars = include $path;
 
 		if(is_array($vars) && count($vars) > 0) {

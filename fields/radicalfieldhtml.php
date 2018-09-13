@@ -1,6 +1,6 @@
 <?php
 /**
- * @package    Radical Field Html
+ * @package    Radical Html Field
  *
  * @author     delo-design.ru <info@delo-design.ru>
  * @copyright  Copyright (C) 2018 "Delo Design". All rights reserved.
@@ -13,15 +13,15 @@ use Joomla\CMS\Language\Text;
 defined('_JEXEC') or die;
 
 /**
- * Class JFormFieldRadicalfieldhtml
+ * Class JFormFieldRadicalhtmlfield
  */
-class JFormFieldRadicalfieldhtml extends JFormField
+class JFormFieldRadicalhtmlfield extends JFormField
 {
 
 	/**
 	 * @var string
 	 */
-	public $type = 'RadicalFieldHtml';
+	public $type = 'RadicalHtmlField';
 
 
 	/**
@@ -39,9 +39,9 @@ class JFormFieldRadicalfieldhtml extends JFormField
 
 		if(isset($data['option']) && $data['view']) {
 			$context = $data['option'] . '.' . $data['view'];
-			$html = "<p>" . Text::_('PLG_RADICAL_FIELD_HTML_INPUT_DESC_LABEL') . " <a href='/administrator/index.php?option=com_fields&view=fields&context=" . $context . "'>" .  Text::_('PLG_RADICAL_FIELD_HTML_INPUT_SETTING_LABEL') . "</a>.</p>";
+			$html = "<p>" . Text::_('PLG_RADICAL_HTML_FIELD_INPUT_DESC_LABEL') . " <a href='/administrator/index.php?option=com_fields&view=fields&context=" . $context . "'>" .  Text::_('PLG_RADICAL_HTML_FIELD_INPUT_SETTING_LABEL') . "</a>.</p>";
 		} else {
-			$html = "<p>" . Text::_('PLG_RADICAL_FIELD_HTML_INPUT_DESC_LABEL') . " <a href='/administrator/index.php?option=com_fields'>" .  Text::_('PLG_RADICAL_FIELD_HTML_INPUT_SETTING_LABEL') . "</a>.</p>";
+			$html = "<p>" . Text::_('PLG_RADICAL_HTML_FIELD_INPUT_DESC_LABEL') . " <a href='/administrator/index.php?option=com_fields'>" .  Text::_('PLG_RADICAL_HTML_FIELD_INPUT_SETTING_LABEL') . "</a>.</p>";
 
 		}
 

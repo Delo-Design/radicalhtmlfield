@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @package    Radical Field Html
+ * @package    Radical Html Field
  *
  * @author     delo-design.ru <info@delo-design.ru>
  * @copyright  Copyright (C) 2018 "Delo Design". All rights reserved.

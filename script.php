@@ -1,6 +1,6 @@
 <?php
 /**
- * @package    Radical Field Html
+ * @package    Radical Html Field
  *
  * @author     delo-design.ru <info@delo-design.ru>
  * @copyright  Copyright (C) 2018 "Delo Design". All rights reserved.
@@ -19,7 +19,7 @@ defined('_JEXEC') or die;
  * @package     A package name
  * @since       1.0
  */
-class plgFieldsRadicalfieldhtmlInstallerScript
+class plgFieldsRadicalhtmlfieldInstallerScript
 {
 	/**
 	/**
@@ -34,7 +34,7 @@ class plgFieldsRadicalfieldhtmlInstallerScript
 			->update( '#__extensions' )
 			->set( 'enabled=1' )
 			->where( 'type=' . $db->q( 'plugin' ) )
-			->where( 'element=' . $db->q( 'radicalfieldhtml' ) );
+			->where( 'element=' . $db->q( 'radicalhtmlfield' ) );
 		$db->setQuery( $query )->execute();
 	}
 
@@ -47,7 +47,7 @@ class plgFieldsRadicalfieldhtmlInstallerScript
 	{
 		if ( ( version_compare( PHP_VERSION, '5.6.0' ) < 0) )
 		{
-			Factory::getApplication()->enqueueMessage( Text::_( 'PLG_RADICAL_FIELD_HTML_WRONG_PHP'), 'error' );
+			Factory::getApplication()->enqueueMessage( Text::_( 'PLG_RADICAL_HTML_FIELD_WRONG_PHP'), 'error' );
 			return false;
 		}
 	}

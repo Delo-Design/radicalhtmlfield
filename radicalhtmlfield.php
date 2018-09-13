@@ -1,6 +1,6 @@
 <?php
 /**
- * @package    Radical Field Html
+ * @package    Radical Html Field
  *
  * @author     delo-design.ru <info@delo-design.ru>
  * @copyright  Copyright (C) 2018 "Delo Design". All rights reserved.
@@ -31,7 +31,7 @@ JLoader::import( 'components.com_fields.libraries.fieldsplugin', JPATH_ADMINISTR
  * @package  radicalmultifield
  * @since    1.0
  */
-class PlgFieldsRadicalfieldhtml extends FieldsPlugin
+class PlgFieldsRadicalhtmlfield extends FieldsPlugin
 {
 
 
@@ -57,7 +57,7 @@ class PlgFieldsRadicalfieldhtml extends FieldsPlugin
 		// The root of the plugin
 		$root = realpath( JPATH_PLUGINS . '/' . $this->_type . '/' . $this->_name );
 
-		$layout = 'radicalfieldhtml';
+		$layout = 'radicalhtmlfield';
 
 		// Strip the extension
 		$layout = str_replace( '.php', '', $layout );
@@ -156,7 +156,7 @@ class PlgFieldsRadicalfieldhtml extends FieldsPlugin
 		}
 
 
-		JLoader::register('JFormFieldRadicalbuttons', JPATH_ROOT . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, ['plugins', 'fields', 'radicalfieldhtml', 'fields', 'radicalbuttons']) . '.php');
+		JLoader::register('JFormFieldRadicalbuttons', JPATH_ROOT . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, ['plugins', 'fields', 'radicalhtmlfield', 'fields', 'radicalbuttons']) . '.php');
 
 		$buttonsField = new JFormFieldRadicalbuttons();
 		$buttons = $buttonsField->getButtonsList();

@@ -1,6 +1,6 @@
 <?php
 /**
- * @package    Radical Field Html
+ * @package    Radical Html Field
  *
  * @author     delo-design.ru <info@delo-design.ru>
  * @copyright  Copyright (C) 2018 "Delo Design". All rights reserved.
@@ -71,11 +71,11 @@ class JFormFieldRadicalbuttons extends FormField
 	public function getButtonsList()
 	{
 		$buttons = [];
-		$path = JPATH_ROOT . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, ['plugins', 'fields', 'radicalfieldhtml', 'buttons']);
+		$path = JPATH_ROOT . DIRECTORY_SEPARATOR . implode(DIRECTORY_SEPARATOR, ['plugins', 'fields', 'radicalhtmlfield', 'buttons']);
 		$files = Folder::files($path);
 		foreach ($files as $file) {
 			$option = explode('.', $file);
-			$className = 'RadicalfieldhtmlButton' . ucfirst($option[0]);
+			$className = 'RadicalhtmlfieldButton' . ucfirst($option[0]);
 			JLoader::register($className, $path . DIRECTORY_SEPARATOR . $file);
 
 			if (!class_exists($className))
