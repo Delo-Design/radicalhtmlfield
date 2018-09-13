@@ -137,6 +137,10 @@ class PlgFieldsRadicalhtmlfield extends FieldsPlugin
 			return;
 		}
 
+		if((string)$field->value === '0') {
+            return;
+        }
+
 		// Merge the params from the plugin and field which has precedence
 		$fieldParams = clone $this->params;
 		$fieldParams->merge( $field->fieldparams );

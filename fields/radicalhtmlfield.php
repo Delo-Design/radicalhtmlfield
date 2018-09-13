@@ -12,10 +12,13 @@ use Joomla\CMS\Language\Text;
 
 defined('_JEXEC') or die;
 
+JFormHelper::loadFieldClass('radio');
+
+
 /**
  * Class JFormFieldRadicalhtmlfield
  */
-class JFormFieldRadicalhtmlfield extends JFormField
+class JFormFieldRadicalhtmlfield extends JFormFieldRadio
 {
 
 	/**
@@ -33,19 +36,11 @@ class JFormFieldRadicalhtmlfield extends JFormField
 	 */
 	public function getInput()
 	{
-		$app = \Joomla\CMS\Factory::getApplication();
-		$data = $app->input->getArray();
-		$html = '';
-
-		if(isset($data['option']) && $data['view']) {
-			$context = $data['option'] . '.' . $data['view'];
-			$html = "<p>" . Text::_('PLG_RADICAL_HTML_FIELD_INPUT_DESC_LABEL') . " <a href='/administrator/index.php?option=com_fields&view=fields&context=" . $context . "'>" .  Text::_('PLG_RADICAL_HTML_FIELD_INPUT_SETTING_LABEL') . "</a>.</p>";
-		} else {
-			$html = "<p>" . Text::_('PLG_RADICAL_HTML_FIELD_INPUT_DESC_LABEL') . " <a href='/administrator/index.php?option=com_fields'>" .  Text::_('PLG_RADICAL_HTML_FIELD_INPUT_SETTING_LABEL') . "</a>.</p>";
-
-		}
-
-		return $html;
+		$this->value = ($this->value === '') ? '0' : $this->value;
+		$this->class = "btn-group btn-group-yesno";
+		$this->addOption(Text::_('PLG_RADICAL_HTML_FIELD_INPUT_INCLUDE_LABEL'), ['value' => '1']);
+		$this->addOption(Text::_('PLG_RADICAL_HTML_FIELD_INPUT_DISABLED_LABEL'), ['value' => '0' ]);
+		return parent::getInput();
 	}
 
 
