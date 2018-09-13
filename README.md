@@ -1,4 +1,4 @@
-# Radical FieldHtml
+# Radical HtmlField
 
 ![Github Releases](https://img.shields.io/github/downloads/Delo-Design/radicalhtmlfield/latest/total.svg)
 ### Описание
