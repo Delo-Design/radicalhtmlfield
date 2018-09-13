@@ -36,7 +36,7 @@ class JFormFieldRadicalhtmlfield extends JFormFieldRadio
 	 */
 	public function getInput()
 	{
-		$this->value = ($this->value === '') ? '0' : $this->value;
+		$this->value = ($this->value === '') ? '1' : $this->value;
 		$this->class = "btn-group btn-group-yesno";
 		$this->addOption(Text::_('PLG_RADICAL_HTML_FIELD_INPUT_INCLUDE_LABEL'), ['value' => '1']);
 		$this->addOption(Text::_('PLG_RADICAL_HTML_FIELD_INPUT_DISABLED_LABEL'), ['value' => '0' ]);
