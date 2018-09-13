@@ -1,6 +1,6 @@
 # Radical FieldHtml
 
-![Github Releases](https://img.shields.io/github/downloads/Delo-Design/radicalfieldhtml/latest/total.svg)
+![Github Releases](https://img.shields.io/github/downloads/Delo-Design/radicalhtmlfield/latest/total.svg)
 ### Описание
 Вам когда-нибудь нужно было вывести виджеты в материалах, или HTML код с какими-то переменными, или модули вне самого контента материала, но в шаблоне?
 Тогда это поле вам точно понадобиться! :)
