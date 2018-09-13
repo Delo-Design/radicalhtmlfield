@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="fieldparams" addfieldpath="/plugins/fields/radicalfieldhtml/fields">
+        <fieldset name="fieldparams">
+
+            <field
+                    name="seevars"
+                    type="radicalseevars"
+                    label="PLG_RADICAL_MULTI_FIELD_FIELD_PARAMS_SEEVARS_LABEL"
+            />
+
+            <field
+                    name="html"
+                    description="PLG_RADICAL_FIELD_HTML_PARAMS_HTML_DESC"
+                    type="editor"
+                    label="PLG_RADICAL_FIELD_HTML_PARAMS_HTML_LABEL"
+                    required="true"
+                    filter="safehtml"
+            />
+
+            <field
+                    name="buttons"
+                    type="radicalbuttons"
+                    label="PLG_RADICAL_MULTI_FIELD_FIELD_PARAMS_BUTTONS_LABEL"
+            />
+
+        </fieldset>
+    </fields>
+</form>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.8" group="fields" method="upgrade">
+	<name>PLG_RADICALFIELDHTML</name>
+	<creationDate>11.09.2018</creationDate>
+	<author>delo-design.ru</author>
+	<authorEmail>info@delo-design.ru</authorEmail>
+	<authorUrl>https://delo-design.ru</authorUrl>
+	<copyright>Copyright (C) 2018 "Delo Design". All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>1.0</version>
+	<description>PLG_RADICALFIELDHTML_XML_DESCRIPTION</description>
+
+	<!-- Scripts to run on installation -->
+	<scriptfile>script.php</scriptfile>
+
+	<!-- Language files -->
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_fields_radicalfieldhtml.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_fields_radicalfieldhtml.sys.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_fields_radicalfieldhtml.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_fields_radicalfieldhtml.sys.ini</language>
+	</languages>
+
+	<!-- Plugin files -->
+	<files>
+		<filename plugin="radicalfieldhtml">radicalfieldhtml.php</filename>
+		<folder>buttons</folder>
+		<folder>language</folder>
+		<folder>fields</folder>
+		<folder>params</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="1" name="radicalfieldhtml">https://hika.su/update/free/plg_radicalfieldhtml.xml</server>
+	</updateservers>
+</extension>
