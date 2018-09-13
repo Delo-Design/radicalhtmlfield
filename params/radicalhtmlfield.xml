@@ -14,7 +14,7 @@
                     type="editor"
                     label="PLG_RADICAL_HTML_FIELD_PARAMS_HTML_LABEL"
                     required="true"
-                    filter="safehtml"
+                    filter="raw"
             />
 
             <field
